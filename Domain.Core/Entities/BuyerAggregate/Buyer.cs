@@ -13,11 +13,8 @@ namespace Domain.Core.Entities.BuyerAggregate
 
         public string Name { get; private set; }
 
-       
-        protected Buyer()
-        {
 
-        }
+        protected Buyer() { }
 
         public Buyer(string identity, string name) : this()
         {
