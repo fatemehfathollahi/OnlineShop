@@ -13,13 +13,11 @@ namespace Domain.Core.Entities.OrderAggrigate
         private decimal _unitPrice;
         private decimal _discount;
         private int _units;
-        private bool _breakable;
-        private decimal _profitAmount;
 
         public int ProductId { get; private set; }
 
         protected OrderItem() { }
-        public OrderItem(int productId,string productName,decimal unitPrice,decimal discount,bool breakable = false,int units=1,decimal profitAmount=0)
+        public OrderItem(int productId,string productName,decimal unitPrice,decimal discount,int units=1)
         {
             if(units<0)
             {
@@ -32,15 +30,7 @@ namespace Domain.Core.Entities.OrderAggrigate
             _productName = productName;
             _unitPrice = unitPrice;
             _discount = discount;
-            _profitAmount = profitAmount;
             _units = units;
-            _breakable = breakable;
-
-        }
-
-        public bool GetProductType()
-        {
-            return _breakable;
         }
 
         public decimal GetCurrentDiscount()
@@ -55,7 +45,7 @@ namespace Domain.Core.Entities.OrderAggrigate
 
         public decimal GetUnitPrice()
         {
-            return _unitPrice + _profitAmount;
+            return _unitPrice;
         }
 
         public string GetOrderItemProductName() => _productName;
@@ -78,6 +68,10 @@ namespace Domain.Core.Entities.OrderAggrigate
             }
 
             _units += units;
+        }
+        public void AddProfit(decimal profit)
+        {
+            _unitPrice = _unitPrice + profit;
         }
     }
 }

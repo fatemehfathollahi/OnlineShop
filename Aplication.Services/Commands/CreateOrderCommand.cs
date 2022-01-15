@@ -96,11 +96,13 @@ namespace Aplication.Services.Commands
             public async Task<bool> Handle(CreateOrderCommand command, CancellationToken cancellationToken)
             {
                 var address = new Address(command.Street, command.City, command.State, command.Country, command.ZipCode);
-                var order = new Order(command.UserId, command.UserName, address);
+                var postType = new PostMethod(PostMethod.PostType.Normal);
+                var packaging = new PackagingMethod(PackagingMethod.PackagingType.Normal);
+                var order = new Order(command.UserId, command.UserName, address,postType, packaging);
 
                 foreach (var item in command.OrderItems)
                 {
-                    order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice, item.Discount,item.Breakable,item.Units);
+                    order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice, item.Discount,item.Units);
                 }
 
                 if (order.GetTotal() < 50000)
@@ -112,9 +114,6 @@ namespace Aplication.Services.Commands
                 {
                     throw new OrderException("بازه ثبت سفارش از 8 صبح تا 7 بعد از ظهر امکان پذیر میباشد");
                 }
-
-                //_logger.LogInformation("----- Creating Order - Order: {@Order}", order);
-
                 _orderRepository.Add(order);
 
                 return await _orderRepository.UnitOfWork
