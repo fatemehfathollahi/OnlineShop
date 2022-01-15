@@ -1,0 +1,15 @@
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\bin\Debug\net5.0\Domain.Contracts.deps.json
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\bin\Debug\net5.0\Domain.Contracts.dll
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\bin\Debug\net5.0\ref\Domain.Contracts.dll
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\bin\Debug\net5.0\Domain.Contracts.pdb
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\obj\Debug\net5.0\Domain.Contracts.csproj.AssemblyReference.cache
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\obj\Debug\net5.0\Domain.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\obj\Debug\net5.0\Domain.Contracts.AssemblyInfoInputs.cache
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\obj\Debug\net5.0\Domain.Contracts.AssemblyInfo.cs
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\obj\Debug\net5.0\Domain.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\obj\Debug\net5.0\Domain.Contracts.dll
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\obj\Debug\net5.0\ref\Domain.Contracts.dll
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\obj\Debug\net5.0\Domain.Contracts.pdb
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\bin\Debug\net5.0\Domain.Core.dll
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\bin\Debug\net5.0\Domain.Core.pdb
+C:\Users\VAIO\source\repos\OnlineShop\Domain.Contracts\obj\Debug\net5.0\Domain.Contracts.csproj.CopyComplete

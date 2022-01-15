@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "KVRIbHeCz1ch9SBfkYAIZWIixQZ4614u+G/SAAEE3olNxEo3RSXO1qgSWNr5QzkE/3hv1sTdnQ6jigCY6oSrAg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\VAIO\\source\\repos\\OnlineShop\\Domain.Core\\Domain.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\VAIO\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\VAIO\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
