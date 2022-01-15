@@ -12,8 +12,8 @@ namespace Domain.Core.Entities.OrderAggrigate
 {
     public class Order : Base.BaseEntity, IAggregateRoot
     {
-        private DateTime _orderDate;
-        private string _description;
+        public  DateTime OrderDate { get; private set; }
+        public string Description { get; private set; }
 
         public Address Address { get;private set; }
         public PostMethod PostMethod { get; private set; }
@@ -36,7 +36,7 @@ namespace Domain.Core.Entities.OrderAggrigate
             Address = address;
             PackagingMethod = packagingMethod;
             PostMethod = postMethod;
-            _orderDate = DateTime.UtcNow;
+            OrderDate = DateTime.UtcNow;
             AddOrderStartedDomainEvent(userId, userName);
 
         }
@@ -81,7 +81,7 @@ namespace Domain.Core.Entities.OrderAggrigate
         }
         public void SetShippedStatus()
         {
-            _description = "The order was shipped.";
+            Description = "The order was shipped.";
             AddDomainEvent(new OrderShippedDomainEvent(this));
         }
         public decimal GetTotal()
