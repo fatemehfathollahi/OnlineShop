@@ -13,7 +13,7 @@ namespace Domain.Core.Base
         int _Id;
         public virtual int Id
         {
-            get
+            get 
             {
                 return _Id;
             }
