@@ -7,44 +7,13 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using static Aplication.Services.Commands.CreateOrderDraftCommand;
 
 namespace OnlineShopAPI.Controllers.v1
 {
     [ApiVersion("1.0")]
     public class OrderController : BaseApiController
     {
-
-        [Route("draft")]
-        [HttpPost]
-        public async Task<ActionResult<OrderDraftDTO>> CreateOrderDraftFromBasketDataAsync([FromBody] CreateOrderDraftCommand createOrderDraftCommand)
-        {
-            
-            return  await Mediator.Send(createOrderDraftCommand);
-        }
-
-        [Route("ship")]
-        [HttpPut]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
-        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-        public async Task<IActionResult> ShipOrderAsync([FromBody] ShipOrderCommand command, [FromHeader(Name = "x-requestid")] string requestId)
-        {
-            bool commandResult = false;
-
-            if (Guid.TryParse(requestId, out Guid guid) && guid != Guid.Empty)
-            {
-               
-                commandResult = await Mediator.Send(command);
-            }
-
-            if (!commandResult)
-            {
-                return BadRequest();
-            }
-
-            return Ok();
-        }
-
+      
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateOrderCommand command)
         {
@@ -65,6 +34,29 @@ namespace OnlineShopAPI.Controllers.v1
         {
             return Ok(await Mediator.Send(new GetAllOrderQuery()));
         }
+
+        [Route("ship")]
+        [HttpPut]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        public async Task<IActionResult> ShipOrderAsync([FromBody] ShipOrderCommand command, [FromHeader(Name = "x-requestid")] string requestId)
+        {
+            bool commandResult = false;
+
+            if (Guid.TryParse(requestId, out Guid guid) && guid != Guid.Empty)
+            {
+
+                commandResult = await Mediator.Send(command);
+            }
+
+            if (!commandResult)
+            {
+                return BadRequest();
+            }
+
+            return Ok();
+        }
+
 
 
     }

@@ -28,16 +28,15 @@ namespace Domain.Core.Entities.OrderAggrigate
         protected Order()
         {
             _orderItems = new List<OrderItem>();
-            _description = null;
-            _orderDate = DateTime.UtcNow;
         }
 
         public Order(string userId, string userName,Address address,PostMethod postMethod,PackagingMethod packagingMethod, int? buyerId = null) : this()
         {
-           _buyerId = buyerId;
+            _buyerId = buyerId;
             Address = address;
             PackagingMethod = packagingMethod;
             PostMethod = postMethod;
+            _orderDate = DateTime.UtcNow;
             AddOrderStartedDomainEvent(userId, userName);
 
         }
@@ -83,6 +82,7 @@ namespace Domain.Core.Entities.OrderAggrigate
         public void SetShippedStatus()
         {
             _description = "The order was shipped.";
+            AddDomainEvent(new OrderShippedDomainEvent(this));
         }
         public decimal GetTotal()
         {

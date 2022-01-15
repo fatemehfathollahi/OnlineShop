@@ -18,15 +18,10 @@ namespace Aplication.Services.Validations
             RuleFor(command => command.State).NotEmpty();
             RuleFor(command => command.Country).NotEmpty();
             RuleFor(command => command.ZipCode).NotEmpty();
-           // RuleFor(command => command.UserId).NotEmpty().Must(BeValidOnlyOrder).WithMessage("Each order must be for one person");
             RuleFor(command => command.OrderDate).NotEmpty().Must(BeValidOrderingDate).WithMessage("It is not possible to order at this time");
             RuleFor(command => command.OrderItems).Must(ContainOrderItems).WithMessage("No order items found");
         }
 
-        private bool BeValidOnlyOrder(string userId)
-        {
-            return userId.Any();
-        }
         private bool BeValidOrderingDate(DateTime dateTime)
         {
             TimeSpan time = DateTime.Now.TimeOfDay;

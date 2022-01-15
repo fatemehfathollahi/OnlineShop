@@ -23,9 +23,9 @@ namespace Domain.Core.Entities.OrderAggrigate
             {
                 throw new OrderException("تعداد قلم سفارش نادرست است");
             }
-            if ((unitPrice * units) < discount)
+            if ((unitPrice * units) < 50000)
             {
-                throw new OrderException("قیمت کالای انتخابی کمتر از تخفیف است");
+                throw new OrderException("سفارش کمتر از مبلغ 50000 امکان پذیر نمی باشد");
             }
             _productName = productName;
             _unitPrice = unitPrice;

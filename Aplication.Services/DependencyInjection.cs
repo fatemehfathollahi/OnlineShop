@@ -19,8 +19,7 @@ namespace Aplication.Services
         {
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddMediatR(typeof(CreateOrderCommandValidator).GetTypeInfo().Assembly);
-            // services.AddMediatR(typeof(CreateOrderCommand).GetTypeInfo().Assembly);
-            // services.AddMediatR(typeof(AddBuyerAggregateWhenOrderStartedDomainEventHandler).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(AddBuyerAggregateWhenOrderStartedDomainEventHandler).GetTypeInfo().Assembly);
         }
     }
 }

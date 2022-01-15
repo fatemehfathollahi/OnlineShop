@@ -17,9 +17,6 @@ namespace Aplication.Services.Commands
 {
     public class CreateOrderCommand : IRequest<bool>
     {
-        //[DataMember]
-        //private readonly List<OrderItemDTO> _orderItems;
-
         [DataMember]
         public string UserId { get; private set; }
 
@@ -44,22 +41,13 @@ namespace Aplication.Services.Commands
         [DataMember]
         public DateTime OrderDate { get; private set; }
 
-        // [DataMember]
-        //  public IEnumerable<OrderItemDTO> OrderItems => _orderItems;
-
         [DataMember]
         public IEnumerable<OrderItemDTO> OrderItems { get; private set; }
 
-
-        //public CreateOrderCommand()
-        //{
-        //    _orderItems = new List<OrderItemDTO>();
-       // }
-
-        public CreateOrderCommand(IEnumerable<OrderItemDTO> orderItems, string userId, string userName, string city, string street,
-            string state, string country, string zipcode) //: this()
+        public CreateOrderCommand(IEnumerable<BasketItem> basketItems, string userId, string userName, string city, string street,
+            string state, string country, string zipcode)
         {
-            OrderItems = orderItems;
+            OrderItems = basketItems.ToOrderItemsDTO();
             UserId = userId;
             UserName = userName;
             City = city;
@@ -80,8 +68,6 @@ namespace Aplication.Services.Commands
             public decimal Discount { get; init; }
 
             public int Units { get; init; }
-
-            public bool Breakable { get; init; }
         }
 
         //................................................
@@ -103,16 +89,6 @@ namespace Aplication.Services.Commands
                 foreach (var item in command.OrderItems)
                 {
                     order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice, item.Discount,item.Units);
-                }
-
-                if (order.GetTotal() < 50000)
-                {
-                    throw new OrderException("سفارش کمتر از مبلغ 50000 امکان پذیر نمی باشد");
-                }
-                TimeSpan time = DateTime.Now.TimeOfDay;
-                if (time < new TimeSpan(08, 00, 00) || time > new TimeSpan(19, 00, 00))
-                {
-                    throw new OrderException("بازه ثبت سفارش از 8 صبح تا 7 بعد از ظهر امکان پذیر میباشد");
                 }
                 _orderRepository.Add(order);
 
