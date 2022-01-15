@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pNpEOX5W07Qu9X0yVR1IKLkieRkoXtYG/e031SmDIn1150CgCFu7r8Ctgfpzlo95mYeFaADYs2hnLa0Ndczbzg==",
+  "dgSpecHash": "q06Fv6sT5NlyDRlxrxRxBGT7dYgxsiybtCCLVjz5tmT+AwETe6sMxXxmyp2wSyNyGfv8PG40qpJVXU8G2nVRmQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VAIO\\source\\repos\\OnlineShop\\OnlineShop\\OnlineShopAPI.csproj",
+  "projectFilePath": "C:\\project\\OnlineShop\\OnlineShop\\OnlineShopAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VAIO\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\VAIO\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

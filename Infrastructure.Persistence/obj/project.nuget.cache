@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "seXWE2Ignj0vKZn0mL4H0vDF8pTOKhIdDIX7ZpIB4ovLzqhUw4I4nrWiTOA46g/c6hg7shq+qzsK+a0P/xL5oA==",
+  "dgSpecHash": "Y9ILn+FmMehEJcugFdbFtvWlmC68I2e7KbjJ7wctmbuvSNNs6pE20ZkJmfFgeTzKvu5DpJGz6+XCZXyx2X9dtQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VAIO\\source\\repos\\OnlineShop\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj",
+  "projectFilePath": "C:\\project\\OnlineShop\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VAIO\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\VAIO\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

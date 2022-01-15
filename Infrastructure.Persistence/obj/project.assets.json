@@ -5958,11 +5958,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VAIO\\source\\repos\\OnlineShop\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj",
+      "projectUniqueName": "C:\\project\\OnlineShop\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj",
       "projectName": "Infrastructure.Persistence",
-      "projectPath": "C:\\Users\\VAIO\\source\\repos\\OnlineShop\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj",
+      "projectPath": "C:\\project\\OnlineShop\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj",
       "packagesPath": "C:\\Users\\VAIO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VAIO\\source\\repos\\OnlineShop\\Infrastructure.Persistence\\obj\\",
+      "outputPath": "C:\\project\\OnlineShop\\Infrastructure.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5983,8 +5983,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\VAIO\\source\\repos\\OnlineShop\\Aplication.Services\\Aplication.Services.csproj": {
-              "projectPath": "C:\\Users\\VAIO\\source\\repos\\OnlineShop\\Aplication.Services\\Aplication.Services.csproj"
+            "C:\\project\\OnlineShop\\Aplication.Services\\Aplication.Services.csproj": {
+              "projectPath": "C:\\project\\OnlineShop\\Aplication.Services\\Aplication.Services.csproj"
             }
           }
         }

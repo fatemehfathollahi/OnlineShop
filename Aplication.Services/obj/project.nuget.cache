@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "42jUOGpsYjBRNBmrjk14wT8h1ZEoXY7oZO/0gFCHIGq4hlB1fK4bl5IYoz8JDvYsmfBXqZ0K/U1rzpwKIHDjWA==",
+  "dgSpecHash": "JhKHfJXijVJdP/NtVSEJRyHTiR1ceCE9a4ZliRBGtD11kluFPQECqYhatwhkhqmMLYADK/V31QdQHGaKQOBm/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VAIO\\source\\repos\\OnlineShop\\Aplication.Services\\Aplication.Services.csproj",
+  "projectFilePath": "C:\\project\\OnlineShop\\Aplication.Services\\Aplication.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VAIO\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\VAIO\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",

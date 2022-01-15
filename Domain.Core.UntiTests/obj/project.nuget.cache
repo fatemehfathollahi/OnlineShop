@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wHOhZhUgacaiH5a3XOu4HsWolhH784F5MsqMudSH27nkw1+qYlxzgPaN3VV40NEo2VWHsFEXX1ySbFMvhlIMaw==",
+  "dgSpecHash": "oI/cD52O2wrBBnBW9cwab30IbfGjrWUHEFCXGVNGXdJZNROLku7Pd0XQIB8kxkFVjY5pIDohL13IYlcr0Oj4nQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VAIO\\source\\repos\\OnlineShop\\Domain.Core.UntiTests\\Domain.Core.UntiTests.csproj",
+  "projectFilePath": "C:\\project\\OnlineShop\\Domain.Core.UntiTests\\Domain.Core.UntiTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VAIO\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\VAIO\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
